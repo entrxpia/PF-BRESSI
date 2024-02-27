@@ -1,0 +1,560 @@
+/* Estilos Generales */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #111;
+  color: #FFF;
+}
+
+/* Barra de Navegación */
+nav {
+  background-color: #333;
+  color: #FFF;
+  padding: 15px 0;
+}
+
+.nav-link {
+  color: #FFF !important;
+}
+
+/* Cambiamos el color en :hover para la barra de navegación */
+.nav-link:hover {
+  color: darkorange !important;
+}
+
+/* Encabezado */
+header {
+  background-color: #111;
+  color: #FFF;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.logolargo {
+  width: 800px;
+  height: auto;
+  filter: none;
+  animation: appear 1s ease-out;
+}
+
+@keyframes distort {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1) rotate(5deg);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-3px);
+  }
+}
+
+/* Sección de Servicios */
+.services {
+  padding: 40px;
+  text-align: center;
+}
+
+.service-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 0;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+@media (max-width: 767px) {
+  .services {
+    padding: 20px;
+  }
+
+  .service-card {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .services {
+    padding: 20px;
+  }
+
+  .service-card {
+    padding: 15px;
+  }
+}
+
+/* Sección de Proyectos Destacados */
+.featured-projects {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #222;
+  color: #FFF;
+  padding: 30px 0;
+}
+
+.project-card {
+  width: calc(25% - 20px);
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #333;
+  border-radius: 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+  animation: appear 1s ease-out;
+}
+
+.project-card:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  transition: filter 0.5s ease;
+}
+
+.project-card:hover img {
+  filter: brightness(1.3);
+}
+
+.project-card h2,
+.project-card p {
+  opacity: 0;
+  animation: appear 1s ease-out forwards;
+}
+
+/* Sección Nosotros */
+.about-us {
+  background-color: #111;
+  color: #FFF;
+  text-align: center;
+  padding: 50px 0;
+  animation: appear 1s ease-out;
+}
+
+.about-us h2,
+.about-us p {
+  opacity: 0;
+  animation: appear 1s ease-out forwards;
+}
+
+/* Sección Blog */
+.blog {
+  background-color: #222;
+  color: #FFF;
+  padding: 30px 0;
+  text-align: center;
+  animation: appear 1s ease-out;
+}
+
+.blog-entry {
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.blog-entry h3,
+.blog-entry p,
+.blog-entry a {
+  opacity: 0;
+  animation: appear 1s ease-out forwards;
+}
+
+/* Sección de Presentación */
+.presentation-section {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #111;
+  color: #FFF;
+}
+
+.presentation-section h2,
+.presentation-section p {
+  opacity: 0;
+  animation: appear 1s ease-out forwards;
+}
+
+/* Sección de Contacto */
+.contact-section {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #111;
+  color: #FFF;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form label {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: darkorange;
+  color: #FFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #FF7F50;
+}
+
+/* Sección Final */
+.final-section {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #111;
+  color: #FFF;
+}
+
+.final-section .imagen-final {
+  width: auto;
+  /* Otros estilos específicos que desees agregar */
+}
+
+/* Pie de Página */
+footer {
+  background-color: #333;
+  color: #FFF;
+  padding: 20px 0;
+  text-align: center;
+  animation: appear 1s ease-out;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-info,
+.social-links {
+  flex: 1;
+}
+
+/* Estilos para la imagen especial */
+.imagen-especial {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  /* Otros estilos específicos que desees agregar */
+}
+
+/* Cambiamos el color del texto en :hover para el contenido del menú desplegable de Servicios */
+.dropdown-item:hover {
+  color: darkorange !important;
+}
+
+/* Media Queries y Estilos Responsivos */
+@media only screen and (max-width: 1200px) {
+  .project-card {
+    width: calc(33.3333% - 20px);
+  }
+  .logolargo {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .project-card {
+    width: calc(50% - 20px);
+  }
+  .logolargo {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .project-card {
+    width: calc(100% - 20px);
+  }
+  .logolargo {
+    width: 150px;
+  }
+}
+
+/* Animaciones y Efectos Adicionales */
+@keyframes shine {
+  0% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.5);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilos Generales para Nosotros */
+.history-section,
+.team-section,
+.values-section {
+  background-color: #111;
+  color: #FFF;
+  text-align: center;
+  padding: 50px 0;
+  animation: appear 1s ease-out;
+}
+
+.history-section h2,
+.team-section h2,
+.values-section h2 {
+  opacity: 0;
+  animation: appear 1s ease-out forwards;
+}
+
+.history-section p,
+.team-section p {
+  opacity: 0;
+  animation: appear 1s ease-out forwards;
+}
+
+/* Sección de Historia */
+.history-section {
+  animation-delay: 0.2s;
+}
+
+/* Sección de Equipo */
+.team-section {
+  animation-delay: 0.4s;
+}
+
+/* Sección de Valores */
+.values-section {
+  animation-delay: 0.6s;
+}
+
+/* Estilos para dispositivos pequeños */
+@media only screen and (max-width: 600px) {
+  .history-section,
+  .team-section,
+  .values-section {
+    padding: 30px 0;
+  }
+}
+
+/* Estilos para Nuestros Clientes */
+.featured-clients {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #222;
+  color: #FFF;
+  padding: 30px 0;
+}
+
+/* Estilos para cada tarjeta de cliente */
+.client-card {
+  width: calc(25% - 20px);
+  margin: 20px 0;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.client-card img {
+  width: 80px; /* Tamaño ajustable según tus preferencias */
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px; /* Redujimos el espacio inferior */
+}
+
+.client-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.client-logo img {
+  width: 100%;
+  height: auto;
+  transition: filter 0.5s ease;
+}
+
+.client-logo:hover img {
+  filter: brightness(1.3);
+}
+
+/* Media Queries y Estilos Responsivos para Nuestros Clientes */
+@media only screen and (max-width: 1200px) {
+  .client-card {
+    width: calc(33.3333% - 20px);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .client-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .client-card {
+    width: calc(100% - 20px);
+  }
+}
+
+/* Animaciones y Efectos Adicionales */
+@keyframes shine {
+  0% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.5);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilos para la Sección de Servicios */
+.services-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #222;
+  padding: 50px 0;
+}
+
+/* Estilos para las Tarjetas de Servicio */
+.service-card {
+  width: calc(30% - 20px);
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
+}
+
+.service-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.service-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #FFF;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #CCC;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Media queries para ajustes en dispositivos más pequeños */
+@media (max-width: 1200px) {
+  .service-card {
+    width: calc(33.3333% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .service-card {
+    width: calc(100% - 20px);
+  }
+}
+
+/* Estilos adicionales para dispositivos de escritorio */
+@media (min-width: 992px) {
+  .services-section {
+    padding: 50px 100px;
+  }
+
+  .service-card {
+    width: calc(25% - 40px);
+    margin: 20px 10px;
+  }
+}
