@@ -1,6 +1,5 @@
 # Archivos temporales o de respaldo
 
-*.sass-cache
+/.sass-cache
 
-
-
+package.json

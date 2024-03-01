@@ -1,0 +1,19 @@
+/* styles.scss */
+
+// Importando variables
+@import "variables" ;
+
+// Importando mixins
+
+@import "mixins";
+
+
+// Importando secciones
+@import "header";
+@import "about-us";
+@import 'services';
+@import 'featured-projects';
+@import 'team';
+@import 'clients';
+@import 'contact-form';
+@import 'footer';

@@ -1,0 +1,84 @@
+/* _services.scss */
+
+
+@import "variables";
+
+
+// Services...
+
+// Estilos Generales para la Sección de Servicios
+.services-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #222;
+  padding: 50px 0;
+}
+
+// Estilos para las Tarjetas de Servicio
+.service-card {
+  width: calc(30% - 20px);
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  @include appear-animation;
+
+  &:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #FFF;
+  }
+
+  p {
+    font-size: 1rem;
+    color: #CCC;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+}
+
+// Media queries para ajustes en dispositivos más pequeños
+@media (max-width: 1200px) {
+  .service-card {
+    width: calc(33.3333% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .service-card {
+    width: calc(100% - 20px);
+  }
+}
+
+// Estilos adicionales para dispositivos de escritorio
+@media (min-width: 992px) {
+  .services-section {
+    padding: 50px 100px;
+  }
+
+  .service-card {
+    width: calc(25% - 40px);
+    margin: 20px 10px;
+  }
+}

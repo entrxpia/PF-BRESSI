@@ -1,0 +1,39 @@
+/* _footer.scss */
+
+
+@import "variables";
+
+
+footer {
+  background-color: $footer-bg-color;
+  color: $light-text-color;
+  padding: 20px 0;
+  text-align: center;
+  animation: appear 1s ease-out;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-info,
+.social-links {
+  flex: 1;
+}
+
+/* Estilos para la imagen especial */
+.imagen-especial {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  /* Otros estilos específicos que desees agregar */
+}
+
+/* Cambiamos el color del texto en :hover para el contenido del menú desplegable de Servicios */
+.dropdown-item:hover {
+  color: $hover-color !important;
+}

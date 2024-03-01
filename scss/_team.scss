@@ -1,0 +1,88 @@
+/* _team.scss */
+
+@import "variables";
+
+
+// Team...
+
+// Estilos Generales para la Sección de Equipo
+.team-section {
+  background-color: #111;
+  color: #FFF;
+  text-align: center;
+  padding: 50px 0;
+  @include appear-animation;
+
+  h2, p {
+    opacity: 0;
+    animation: appear 1s ease-out forwards;
+  }
+}
+
+// Estilos para cada Miembro del Equipo
+.team-member {
+  width: calc(25% - 20px);
+  margin: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  border: 1px solid #333;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  @include appear-animation;
+
+  img {
+    width: 80px; /* Tamaño ajustable según tus preferencias */
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px; /* Redujimos el espacio inferior */
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+// Media Queries y Estilos Responsivos para Miembros del Equipo
+@media only screen and (max-width: 1200px) {
+  .team-member {
+    width: calc(33.3333% - 20px);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .team-member {
+    width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .team-member {
+    width: calc(100% - 20px);
+  }
+}
+
+// Animaciones y Efectos Adicionales
+@keyframes shine {
+  0% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.5);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
