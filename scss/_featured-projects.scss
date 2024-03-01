@@ -1,7 +1,7 @@
 /* _featured-projects.scss */
 
 
-@import "variables";
+
 
 
 .featured-projects {
@@ -14,8 +14,9 @@
 }
 
 .project-card {
-  width: calc(25% - 20px);
+  width: calc(20% - 20px);
   margin-bottom: 20px;
+  padding: 20px;
   overflow: hidden;
   position: relative;
   border: 1px solid $border-color;

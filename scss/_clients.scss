@@ -25,10 +25,12 @@
 }
 
 .client-card img {
-  width: 80px; /* Tamaño ajustable según tus preferencias */
+  width: 80px;
+  /* Tamaño ajustable según tus preferencias */
   height: auto;
   border-radius: 50%;
-  margin-bottom: 10px; /* Redujimos el espacio inferior */
+  margin-bottom: 10px;
+  /* Redujimos el espacio inferior */
 }
 
 .client-card:hover {
@@ -70,9 +72,11 @@
   0% {
     filter: brightness(1);
   }
+
   50% {
     filter: brightness(1.5);
   }
+
   100% {
     filter: brightness(1);
   }
@@ -83,6 +87,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);

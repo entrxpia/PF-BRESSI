@@ -13,7 +13,8 @@
   padding: 50px 0;
   @include appear-animation;
 
-  h2, p {
+  h2,
+  p {
     opacity: 0;
     animation: appear 1s ease-out forwards;
   }
@@ -32,10 +33,12 @@
   @include appear-animation;
 
   img {
-    width: 80px; /* Tamaño ajustable según tus preferencias */
+    width: 80px;
+    /* Tamaño ajustable según tus preferencias */
     height: auto;
     border-radius: 50%;
-    margin-bottom: 10px; /* Redujimos el espacio inferior */
+    margin-bottom: 10px;
+    /* Redujimos el espacio inferior */
   }
 
   &:hover {
@@ -68,9 +71,11 @@
   0% {
     filter: brightness(1);
   }
+
   50% {
     filter: brightness(1.5);
   }
+
   100% {
     filter: brightness(1);
   }
@@ -81,6 +86,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
